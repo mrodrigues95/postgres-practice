@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mrodrigues95/postgres-practice/issues"
   },
-  "homepage": "https://github.com/mrodrigues95/postgres-practice#readme"
+  "homepage": "https://github.com/mrodrigues95/postgres-practice#readme",
+  "dependencies": {
+    "pg": "^7.18.2"
+  }
 }
