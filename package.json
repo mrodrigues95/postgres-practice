@@ -1,0 +1,20 @@
+{
+  "name": "postgres-practice",
+  "version": "1.0.0",
+  "description": "messing around with postgresql and nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrodrigues95/postgres-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrodrigues95/postgres-practice/issues"
+  },
+  "homepage": "https://github.com/mrodrigues95/postgres-practice#readme"
+}
