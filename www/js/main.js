@@ -3,5 +3,5 @@ function submitInformation() {
     var lastName = document.getElementById('last-name').value;
     var email = document.getElementById('email').value;
 
-    alert("First name: " + firstName + "n Last name: " + lastName + "n Email: " + email);
+    console.log("First name: " + firstName + "n Last name: " + lastName + "n Email: " + email);
 }

@@ -1,24 +1,14 @@
-const http = require('http')
-const fs = require('fs')
-const port = 3000;
+var express = require('express');
+var app = express();
 
-const server = http.createServer(function(req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/html' })
-    fs.readFile('index.html', function(error, data) {
-        if (error) {
-            res.writeHead(404)
-            res.write('ERROR: file not found')
-        } else {
-            res.write(data);
-        }
-        res.end()
-    })
-})
+app.use(express.static(__dirname + '/www'));
 
-server.listen(port, function(error) {
+var port = process.env.PORT || 3000;
+
+app.listen(port, function(error) {
     if (error) {
         console.log("something went wrong ", error)
     } else {
         console.log("listening on ", port)
     }
-})
+});
