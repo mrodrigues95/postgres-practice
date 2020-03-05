@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Person Listings</title>
     <link rel="Stylesheet" href="style.css" />
-</head>
-<body class="person-list-page">
+  </head>
+  <body class="person-list-page">
     <h1>Person List</h1>
 
-    <p>Currently no person(s) listed.</p>
-</body>
+    <table>
+      {{#rows}}
+        <tr>
+            <td>{{person_id}}</td>
+            <td>{{first_name}}</td>
+            <td>{{last_name}}</td>
+            <td>{{email}}</td>
+            <td>{{created_on}}</td>
+            <td>
+                <form method="POST" action="person/delete/{{person_id}}">
+                    <button type="submit">Delete person</button>
+                </form>
+            </td>
+        </tr>
+      {{/rows}}
+    </table>
+  </body>
 </html>

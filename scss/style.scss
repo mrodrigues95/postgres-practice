@@ -8,5 +8,13 @@ h1 {
     font-size: 2em;
 }
 
+table {
+    margin: 1em 0;
+}
+
+td {
+    padding: 5px;
+}
+
 @import 'person-list';
 @import 'add-person';
