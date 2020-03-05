@@ -10,20 +10,21 @@
     <h1>Person List</h1>
 
     <table>
-      {{#rows}}
+      {{#persons}}
         <tr>
             <td>{{person_id}}</td>
             <td>{{first_name}}</td>
             <td>{{last_name}}</td>
             <td>{{email}}</td>
             <td>{{created_on}}</td>
+            <td><a href="/person/edit/{{person_id}}">Edit</a></td>
             <td>
                 <form method="POST" action="person/delete/{{person_id}}">
                     <button type="submit">Delete person</button>
                 </form>
             </td>
         </tr>
-      {{/rows}}
+      {{/persons}}
     </table>
   </body>
 </html>

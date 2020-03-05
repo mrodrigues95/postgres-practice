@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Person</title>
+    <link rel="Stylesheet" href="/style.css" />
+</head>
+<body class="add-person-page">
+    <h1>Person Form</h1>
+
+    <form method="POST" action="/person/edit/{{person.person_id}}">
+        <input placeholder="First name" name="firstName" value="{{person.first_name}}" />
+        <input placeholder="Last name" name="lastName" value="{{person.last_name}}" />
+        <input placeholder="Email" name="email" value="{{person.email}}" />
+        <button type ="submit">Update Person</button>
+    </form>
+</body>
+</html>
