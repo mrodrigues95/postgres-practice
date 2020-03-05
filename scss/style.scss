@@ -1,0 +1,12 @@
+@import 'reset';
+
+body {
+    font-family: Helvetica, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+@import 'person-list';
+@import 'add-person';

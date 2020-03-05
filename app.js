@@ -19,6 +19,11 @@ app.get('/person-list', (req, res) => {
   res.render('person-list'); // refers to html page (person-list.mustache)
 });
 
+app.get('/person-form', (req, res) => {
+  res.render('person-form'); // refers to html page (person-form.mustache)
+})
+
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, function(error) {
