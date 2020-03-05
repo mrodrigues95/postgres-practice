@@ -16,15 +16,15 @@ app.use(express.static(__dirname + '/www'));
 
 // handle GET requests
 app.get('/person-list', (req, res) => {
-    res.render('person-list'); // refers to html page (person-list.mustache)
+  res.render('person-list'); // refers to html page (person-list.mustache)
 });
 
 const port = process.env.PORT || 3000;
 
 app.listen(port, function(error) {
-    if (error) {
-        console.log("ERROR: ", error)
-    } else {
-        console.log("Listening on ", port)
-    }
+  if (error) {
+    console.log('ERROR: ', error);
+  } else {
+    console.log('Listening on ', port);
+  }
 });
